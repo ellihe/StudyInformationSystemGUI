@@ -28,7 +28,7 @@ import javafx.scene.web.WebView;
 
 /**
  * Controlls the visual view of secondWindow.fxml
- * @author Arttu, Ellinoora, Niko
+ * @author A, Ellinoora, N
  */
 public class SecondWindowController {
     

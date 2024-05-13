@@ -25,7 +25,7 @@ import java.nio.charset.Charset;
  * A class representing a data structure, that consists of  ModuleEntry objects.
  * Has the functions needed to initialize, modify and/or expand the structure. 
  * Uses Sisu API as a source for the module data and information.
- * @author Arttu
+ * @author A
  */
 public class DataStructure {
     private ArrayList<JsonObject> degrees;

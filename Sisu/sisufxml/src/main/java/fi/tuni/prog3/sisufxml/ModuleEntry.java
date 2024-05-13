@@ -17,7 +17,7 @@ import javafx.scene.control.TreeItem;
  * Several types of modules are supported.
  * Contains all relevant information about an individual module.
  * If module is not a course, can contain child modules.
- * @author Arttu
+ * @author A
  */
 public class ModuleEntry {
     private String name;

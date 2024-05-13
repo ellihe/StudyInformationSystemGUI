@@ -17,7 +17,7 @@ import static javafx.application.Application.launch;
  * A class representing the main application. Responsible for the start of 
  * the program, sets everything up and has the attributes that hold core data
  * needed to run the program.
- * @author Arttu, Ellinoora, Niko
+ * @author A, Ellinoora, N
  */
 public class Sisu extends Application {
 

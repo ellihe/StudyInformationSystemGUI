@@ -1,5 +1,5 @@
 /**
  * Includes class implementations of Project work of Programming 3
- * @author Arttu, Ellinoora, Niko
+ * @author A, Ellinoora, N
  */
 package fi.tuni.prog3.sisufxml;
