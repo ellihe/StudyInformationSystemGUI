@@ -1,1 +1,1 @@
-Full documentation of the project can be view in folder Documentation 
+Full documentation of the program can be viewed in folder Documentation
