@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  *
- * @author nikox
+ * @author n
  */
 public class ModuleEntryTest {
     

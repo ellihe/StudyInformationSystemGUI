@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeAll;
 /**
  *
- * @author arttu
+ * @author a
  */
 public class DataStructureTest {
     

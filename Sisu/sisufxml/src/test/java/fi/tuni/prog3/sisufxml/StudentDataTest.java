@@ -6,7 +6,7 @@ package fi.tuni.prog3.sisufxml;
 
 /**
  *
- * @author User
+ * @author Ellinoora
  */
 import com.google.gson.JsonObject;
 import org.junit.jupiter.api.Test;
