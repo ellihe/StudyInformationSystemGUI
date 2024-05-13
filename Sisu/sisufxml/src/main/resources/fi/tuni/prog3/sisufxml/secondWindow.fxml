@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fi.tuni.prog3.sisufxml.SecondWindowController">
+   <children>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToStartWindow" text="Previous page" />
+      <TabPane layoutX="14.0" layoutY="47.0" prefHeight="576.0" prefWidth="986.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab text="Start Page">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="596.0" prefWidth="1014.0">
+                     <children>
+                        <TextArea layoutX="14.0" prefHeight="507.0" prefWidth="683.0" text="Hi! Welcome to Sisu. &#10;&#10;Here you can view the study Structure of University of Tampere through Sisu application.&#10;&#10;Student Information &#10;In Student Information page you can take a look at your properties and change some of them. You can &#10;change your study degree, start year, email and study direction.&#10;&#10;Study Structure&#10;In Study Structure page you can view the degree or degrees you have chosen in Student Information tab. If your &#10;selection is &quot;Select all&quot; it is possible to take a look at whole study structure of University of Tampere but if you choose&#10;one spesific degree, you will see only its structure.&#10;&#10;Close -button is for closing the window. When closing the window you will get JSON -file to your directory which &#10;includes all student information who have used this app.&#10;&#10;Previous page will lead you to starting dialog where you can change the student whose study properties you want to&#10;see or save. &#10;&#10;If you come up with any questions, do not hesitate to make contact with us!&#10;parimestaria@ohj3project.fi (this is not actual email)" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+          <Tab id="studentInfo" fx:id="studentInfo" onSelectionChanged="#addStudentInfo" text="Student Information">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="316.0" prefWidth="577.0">
+                     <children>
+                        <ListView id="infoList" fx:id="infoList" layoutX="14.0" layoutY="34.0" prefHeight="475.0" prefWidth="467.0" />
+                        <Label id="nameLabel" fx:id="nameLabel" layoutX="28.0" layoutY="50.0" text="Name" />
+                        <Label id="studentIDLabel" fx:id="studentIDLabel" layoutX="28.0" layoutY="84.0" text="Student ID" />
+                        <Label layoutX="176.0" layoutY="2.0" prefHeight="33.0" prefWidth="209.0" text="Student Information">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox id="chooseMenu" fx:id="chooseMenu" layoutX="28.0" layoutY="145.0" onMouseClicked="#addDegree" prefHeight="25.0" prefWidth="403.0" />
+                        <Label layoutX="27.0" layoutY="190.0" text="Start Year" />
+                        <Label layoutX="27.0" layoutY="220.0" text="e-mail" />
+                        <Label layoutX="27.0" layoutY="248.0" text="Study Direction" />
+                        <TextField id="emailField" fx:id="emailField" layoutX="133.0" layoutY="215.0" prefHeight="25.0" prefWidth="239.0" />
+                        <TextField id="startYearField" fx:id="startYearField" layoutX="133.0" layoutY="186.0" prefHeight="25.0" prefWidth="239.0" />
+                        <TextField id="studyDirField" fx:id="studyDirField" layoutX="133.0" layoutY="244.0" prefHeight="25.0" prefWidth="239.0" />
+                        <TextField id="startYearField" fx:id="nameField" editable="false" layoutX="133.0" layoutY="46.0" prefHeight="25.0" prefWidth="239.0" />
+                        <TextField id="startYearField" fx:id="studentIDField" editable="false" layoutX="133.0" layoutY="80.0" prefHeight="25.0" prefWidth="239.0" />
+                        <Button fx:id="saveStudentInfoButton" layoutX="381.0" layoutY="290.0" mnemonicParsing="false" onAction="#saveStudentData" text="Save all" />
+                        <Label layoutX="230.0" layoutY="352.0" text="resets the tracking of your studyprogress" />
+                        <Label layoutX="230.0" layoutY="370.0" text="for the previous degree." />
+                        <Label layoutX="230.0" layoutY="334.0" text="Keep in mind: changing your degree" />
+                        <Label fx:id="totalCredits" layoutX="47.0" layoutY="352.0" text="Label" />
+                        <Label layoutX="47.0" layoutY="334.0" text="Earned credits" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="tabs" onSelectionChanged="#setRoot" text="Study Structure">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="579.0" prefWidth="995.0">
+                     <children>
+                        <TreeView id="studyTreeView" fx:id="studyTreeView" layoutX="14.0" layoutY="38.0" onMouseClicked="#treeViewMouseEvent" prefHeight="464.0" prefWidth="576.0" />
+                        <Label fx:id="degreeLabel" layoutX="14.0" layoutY="1.0" prefHeight="34.0" prefWidth="929.0" text="Study Structure">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <WebView fx:id="courseInfoWebView" layoutX="603.0" layoutY="176.0" prefHeight="330.0" prefWidth="371.0" />
+                        <Label fx:id="infoName" layoutX="616.0" layoutY="38.0" prefHeight="34.0" prefWidth="358.0" text="Label" />
+                        <Label fx:id="infoCredits" layoutX="615.0" layoutY="72.0" prefHeight="18.0" prefWidth="148.0" text="Label" />
+                        <Label fx:id="infoGrading" layoutX="615.0" layoutY="136.0" prefHeight="18.0" prefWidth="134.0" text="Label" />
+                        <CheckBox fx:id="completeBox" layoutX="862.0" layoutY="138.0" mnemonicParsing="false" onMouseClicked="#handleCheckBox" text="Completed" visible="false" />
+                        <Label fx:id="courseCredit" layoutX="781.0" layoutY="137.0" text="Label" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Button id="closeButton" fx:id="closeButton" layoutX="1009.0" layoutY="14.0" mnemonicParsing="false" onAction="#closeButtonHandler" text="Close" />
+   </children>
+</AnchorPane>

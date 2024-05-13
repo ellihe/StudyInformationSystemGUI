@@ -1,0 +1,51 @@
+@options
+@packages
+@argfile
+--class-path
+'C:/Users/arttu/.m2/repository/org/openjfx/javafx-controls/13/javafx-controls-13.jar;C:/Users/arttu/.m2/repository/org/openjfx/javafx-graphics/13/javafx-graphics-13.jar;C:/Users/arttu/.m2/repository/org/openjfx/javafx-base/13/javafx-base-13.jar;C:/Users/arttu/.m2/repository/org/openjfx/javafx-fxml/13/javafx-fxml-13.jar;C:/Users/arttu/.m2/repository/junit/junit/4.11/junit-4.11.jar;C:/Users/arttu/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;C:/Users/arttu/.m2/repository/org/openjfx/javafx-web/13/javafx-web-13.jar;C:/Users/arttu/.m2/repository/org/openjfx/javafx-media/13/javafx-media-13.jar'
+--module-path
+'D:/Documents/Koulu/Ohj3/Rtyö/sisufxml/target/classes;C:/Users/arttu/.m2/repository/org/openjfx/javafx-fxml/13/javafx-fxml-13-win.jar;C:/Users/arttu/.m2/repository/com/google/code/gson/gson/2.9.0/gson-2.9.0.jar;C:/Users/arttu/.m2/repository/org/openjfx/javafx-media/13/javafx-media-13-win.jar;C:/Users/arttu/.m2/repository/org/openjfx/javafx-controls/13/javafx-controls-13-win.jar;C:/Users/arttu/.m2/repository/org/openjfx/javafx-web/13/javafx-web-13-win.jar;C:/Users/arttu/.m2/repository/org/openjfx/javafx-graphics/13/javafx-graphics-13-win.jar;C:/Users/arttu/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar;C:/Users/arttu/.m2/repository/org/openjfx/javafx-base/13/javafx-base-13-win.jar'
+--patch-module
+fi.tuni.prog3.sisufxml='D:/Documents/Koulu/Ohj3/Rtyö/sisufxml/src/main/java'
+-encoding
+'UTF-8'
+-protected
+-source
+'11'
+--module-source-path
+'D:/Documents/Koulu/Ohj3/Rtyö/sisufxml/target/site/apidocs/src'
+-author
+-bottom
+'Copyright &#169; 2022. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'D:/Documents/Koulu/Ohj3/Rtyö/sisufxml/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'sisufxml 1.0 API'
+-linkoffline
+'https://docs.oracle.com/en/java/javase/11/docs/api' 'D:/Documents/Koulu/Ohj3/Rtyö/sisufxml/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'sisufxml 1.0 API'
+fi.tuni.prog3.sisufxml
+'D:/Documents/Koulu/Ohj3/Rtyö/sisufxml/src/main/java/module-info.java'
+D:\Documents\Koulu\Ohj3\Rtyö\sisufxml\target\site\apidocs\allclasses-index.html = 1651443435965
+D:\Documents\Koulu\Ohj3\Rtyö\sisufxml\target\site\apidocs\allpackages-index.html = 1651443435968
+D:\Documents\Koulu\Ohj3\Rtyö\sisufxml\target\site\apidocs\element-list = 1651443435882
+D:\Documents\Koulu\Ohj3\Rtyö\sisufxml\target\site\apidocs\help-doc.html = 1651443435999
+D:\Documents\Koulu\Ohj3\Rtyö\sisufxml\target\site\apidocs\index-all.html = 1651443435992
+D:\Documents\Koulu\Ohj3\Rtyö\sisufxml\target\site\apidocs\index.html = 1651443435994
+D:\Documents\Koulu\Ohj3\Rtyö\sisufxml\target\site\apidocs\jquery-ui.overrides.css = 1651443436027
+D:\Documents\Koulu\Ohj3\Rtyö\sisufxml\target\site\apidocs\member-search-index.js = 1651443435974
+D:\Documents\Koulu\Ohj3\Rtyö\sisufxml\target\site\apidocs\module-search-index.js = 1651443435970
+D:\Documents\Koulu\Ohj3\Rtyö\sisufxml\target\site\apidocs\overview-tree.html = 1651443435949
+D:\Documents\Koulu\Ohj3\Rtyö\sisufxml\target\site\apidocs\package-search-index.js = 1651443435971
+D:\Documents\Koulu\Ohj3\Rtyö\sisufxml\target\site\apidocs\script.js = 1651443436004
+D:\Documents\Koulu\Ohj3\Rtyö\sisufxml\target\site\apidocs\search.js = 1651443436006
+D:\Documents\Koulu\Ohj3\Rtyö\sisufxml\target\site\apidocs\stylesheet.css = 1651443436002
+D:\Documents\Koulu\Ohj3\Rtyö\sisufxml\target\site\apidocs\tag-search-index.js = 1651443435975
+D:\Documents\Koulu\Ohj3\Rtyö\sisufxml\target\site\apidocs\type-search-index.js = 1651443435972
